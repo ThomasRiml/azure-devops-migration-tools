@@ -51,7 +51,7 @@ namespace MigrationTools.DataContracts.Pipelines
             Source = "restApi";
             Revision = 1;
             Links = null;
-            Artifacts = null;
+            // Artifacts = null;
             Url = null;
             Links = null;
             Id = "0";
