@@ -15,6 +15,10 @@
     "init2": {
       "commandName": "Project",
       "commandLineArgs": "init -c configuration2.json --options Fullv2"
+    },
+    "execute c:": {
+      "commandName": "Project",
+      "commandLineArgs": "execute --config C:\\tools\\MigrationTools\\configuration.json"
     }
   }
 }
