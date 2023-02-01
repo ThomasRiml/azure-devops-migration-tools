@@ -268,7 +268,7 @@ namespace MigrationTools.Processors
                 {
                     foreach (var variableGroup in definitionToBeMigrated.VariableGroups)
                     {
-                        if (variableGroup != null)
+                        if (variableGroup == null)
                         {
                             continue;
                         }
@@ -294,6 +294,8 @@ namespace MigrationTools.Processors
             var sourceRepoId = definitionToBeMigrated.Repository.Id;
             string sourceRepositoryName = sourceRepositories.FirstOrDefault(s => s.Id == sourceRepoId)?.Name;
             string targetRepoId;
+
+            sourceRepositoryName ??= string.Empty;
 
             if (_Options.RepositoryNameMaps.ContainsKey(sourceRepositoryName))  //Map repository name if configured
             {
